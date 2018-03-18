@@ -17,9 +17,9 @@ class DefaultController extends Controller
     public function createAction()
     {
         $product = new Product();
-        $product = setName('Keyboard');
-        $product = setPrice(20);
-        $product = setDescription('Ergonomic a nd stylish!');
+        $product->setName('Keyboard');
+        $product->setPrice(20);
+        $product->setDescription('Ergonomic a nd stylish!');
 
         $em = $this->getDoctrine()->getManager();
 
